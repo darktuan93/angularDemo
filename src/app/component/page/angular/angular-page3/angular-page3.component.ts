@@ -10,6 +10,8 @@ export class AngularPage3Component implements OnInit {
   public formInfor: any; // Khai báo 1 biến public formInfor với kiểu dữ liệu bất kỳ
   public inforCustomer: any = {}// Kiểu dữ là object để hứng dữ liệu khi lấy từ form Input
   public submitted = false;
+  public modelView: any;
+
 
   constructor(private fb: FormBuilder) {
     this.formInfor = FormGroup // Khởi tạo biến là FormGroup
@@ -25,7 +27,11 @@ export class AngularPage3Component implements OnInit {
     })
 
   }
-  get f() { return this.formInfor.controls; }
+
+  get f() {
+    return this.formInfor.controls;
+  }
+
   // HÀM CONFIRM FORM
   confirmInfor() {
     this.submitted = true;
