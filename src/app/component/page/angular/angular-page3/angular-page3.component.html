@@ -1,8 +1,8 @@
 <h3>Data Binding</h3>
 <div>
-  <h5>Binding Interpolation (2 dấu ngoặc)</h5>
-  <p>Cho ví dụ: sau khi nhập thông tin sử dụng binding interpolation xuất dữ liệu sang bản bên cạnh </p>
-  <h5> Cho Form control </h5>
+  <h5> Binding Interpolation: <span class="text-danger"> sử dụng (2 cặp ngoặc kép) để hiển thị dữ liệu từ code logic sang view </span> </h5>
+  <p>Cho ví dụ: sau khi nhập thông tin sử dụng đúng ấn Xác nhận sẽ binding interpolation xuất dữ liệu sang bản bên cạnh, nhập sai thì không hiển thị gì cả </p>
+  <h5> Cho Form Group như sau: </h5>
   <div class="row p-3">
     <div class="col-md-4 angular-data-binding">
       <form [formGroup]="formInfor" (submit)="confirmInfor()">
@@ -33,7 +33,6 @@
       <div class="pt-3">
         <p>Họ và tên: {{inforCustomer.name }}</p>
         <p>Địa chỉ Email: {{inforCustomer.email }}</p>
-        <p>{{date}}</p>
       </div>
     </div>
 

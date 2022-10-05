@@ -20,7 +20,7 @@ const routes: Routes = [
   //
   {path: "angular1", component: AngularPage1Component},
   {path: "angular2", component: AngularPage2Component},
-  {path: "angular3", component: AngularPage3Component},
+  {path: "angular-databinding", component: AngularPage3Component},
   {path: "angular4", component: AngularPage4Component},
   {path: "angular5", component: AngularPage5Component},
   {path: "angular6", component: AngularPage6Component},

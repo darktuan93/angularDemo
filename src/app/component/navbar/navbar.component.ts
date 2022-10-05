@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as moment from 'moment';
+
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  public time: any
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    let intervalId
+    intervalId = setInterval(() => {
+      this.time = moment().format('Do MMMM YYYY / h:mm:ss A');
+    }, 1000);
   }
+
 
 }
