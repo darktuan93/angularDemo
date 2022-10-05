@@ -7,7 +7,8 @@
 
   <ul class="list-unstyled components">
     <p>Tài Liệu FrontEnd - Angular</p>
-    <li class="active">
+    <!--HTML / CSS-->
+    <li class="">
       <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 
         <span class="fa-brands fa-html5"></span>
@@ -15,21 +16,36 @@
       </a>
       <ul class="collapse list-unstyled" id="homeSubmenu">
         <li>
-          <a href="#">Home 1</a>
+          <a href="#">HTML Cơ bản</a>
         </li>
         <li>
-          <a href="#">Home 2</a>
+          <a href="#">CSS Selector</a>
         </li>
         <li>
-          <a href="#">Home 3</a>
+          <a href="#">Độ ưu tiên của CSS</a>
+        </li>
+      </ul>
+
+    </li>
+    <!--JAVASCRIPT-->
+    <li>
+      <a href="#pageSubmenuJS" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <span class="fa-brands fa-js"> </span> Javascript
+      </a>
+      <ul class="collapse list-unstyled " id="pageSubmenuJS">
+        <li>
+          <a routerLink="/typepage1">Lý thuyết cơ bản</a>
+        </li>
+        <li>
+          <a routerLink="/typepage2">Một số hàm hay dùng</a>
+        </li>
+        <li>
+          <a routerLink="/typepage3">Promise và Async/Await</a>
         </li>
       </ul>
     </li>
-    <li>
-      <a href="#">
-        <span class="fa-brands fa-js"> </span> Javascript
-      </a>
-    </li>
+
+    <!--TYPESCRIPT-->
 
     <li>
       <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -48,6 +64,8 @@
       </ul>
     </li>
 
+    <!-- ANGULAR CƠ BẢN-->
+
     <li>
 
       <a href="#angularSubmenu" data-toggle="collapse" aria-expanded="false" class=" dropdown-toggle">
@@ -58,7 +76,10 @@
           <a routerLink="/angular1">Lý thuyết cơ bản</a>
         </li>
         <li>
-          <a routerLink="/angular2">Component</a>
+          <a routerLink="/angular1">Lý thuyết Life-Circle</a>
+        </li>
+        <li>
+          <a routerLink="/angular-component">Component</a>
         </li>
         <li>
           <a routerLink="/angular-databinding">Data Binding</a>
@@ -75,7 +96,7 @@
       </ul>
     </li>
 
-
+    <!-- ANGULAR NÂNG CAO-->
     <li>
       <a href="#angularSubmenuAdv" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
         <span class="fa-brands fa-angular"> </span> Angular Advance

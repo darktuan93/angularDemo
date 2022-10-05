@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-type-page-one',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypePageOneComponent implements OnInit {
 
-  constructor() { }
+  public inputNumber: any
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+
+
+  }
+
+
+  changeValue2(event: any) {
+    console.log(typeof  event.target.value)
+  }
 }

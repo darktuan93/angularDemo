@@ -8,7 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  public time: any
+  public timePick: any
 
   constructor() {
   }
@@ -16,7 +16,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     let intervalId
     intervalId = setInterval(() => {
-      this.time = moment().format('Do MMMM YYYY / h:mm:ss A');
+      this.timePick = moment().format('Do MMMM YYYY / h:mm:ss A');
+      // console.log(this.time)
     }, 1000);
   }
 
