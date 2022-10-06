@@ -1,0 +1,22 @@
+<h4>Bên Gửi</h4>
+<p>Lựa chọn một ngôn ngữ bạn thích </p>
+<p> Sau khi lựa chọn xong luồng dữ liệu sẽ di chuyển theo logic sau:
+
+  Chọn(lấy) dữ liệu (Bên gửi) => Service Share Data => (Bên nhận) Nhận dữ liệu từ Service Share Data
+
+</p>
+<ng-select [items]="language" formControlName="selectLang"
+           (change)="changeLeagueOwner($event)"
+           bindLabel="name"
+           [multiple]="true"
+           placeholder="Chọn ngôn ngữ">
+</ng-select>
+
+<button [ngClass]="selectLanguage.length > 0 ? '' : 'disabled' " (click)="sendDataToRxjs()"
+        class="btn btn-primary mt-2 cursor-pointer"> Gửi
+  Dữ Liệu
+</button>
+
+<p>Danh Sách được chọn </p>
+{{selectLanguage | json}}
+

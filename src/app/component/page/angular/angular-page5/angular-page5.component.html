@@ -7,7 +7,7 @@
       component cha,
       tại component cha chỉ cần thêm attribute là (var_event) = function lấy giá trị đó gửi lên để tính toán
     </p>
-    <p>Component cha: {{valueParent}}</p>
+    <p>Component cha: <span style="font-size: 20px">{{valueParent}}</span> </p>
     <p>Nhận giá trị từ component con nhân với lên 10</p>
     <hr>
     <div class="bg-warning p-3" style="border-radius: 15px">
@@ -20,13 +20,20 @@
     <p>Nhập input xong (sự kiện onchange) sau đó dưới component con nhận được dữ liệu và binding ra ngoài </p>
     <input class="form-control" (change)="valueInput($event)">
     <hr>
-    <app-child2-component [valueParentMess]="valueParent"></app-child2-component>
+    <app-child2-component [valueInputNumber]="valueInputNumber"></app-child2-component>
   </div>
 </div>
 <br>
 <h4>Chia sẻ dữ liệu giữa các Component thông qua RxJX BehaviourSubject </h4>
-
-
+<h5>Truyền dữ liệu có data service trung gian</h5>
+<div class="row container">
+  <div class="col-5 angular-data-binding">
+    <app-sender></app-sender>
+  </div>
+  <div class="col-5 ml-3 angular-data-binding">
+    <app-revicer></app-revicer>
+  </div>
+</div>
 
 
 

@@ -20,6 +20,9 @@ import {HomeContentComponent} from './component/page/trangchu/home-content/home-
 import {ChildComponentComponent} from './component/page/angular/angular-page5/child-component/child-component.component';
 import {Child2ComponentComponent} from './component/page/angular/angular-page5/child2-component/child2-component.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AngularPage5Module} from "./component/page/angular/angular-page5/angular-page5.module";
+import {ShareModuleModule} from "./share-module/share-module.module";
+import {NgSelectModule} from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -39,14 +42,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AngularPage5Component,
     AngularPage6Component,
     HomeContentComponent,
-
     ChildComponentComponent,
     Child2ComponentComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule, ShareModuleModule, NgSelectModule,
+    BrowserAnimationsModule, AngularPage5Module
   ],
   providers: [],
   bootstrap: [AppComponent]

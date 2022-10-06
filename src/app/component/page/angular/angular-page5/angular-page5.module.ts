@@ -1,12 +1,23 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {SenderComponent} from './sender/sender.component';
+import {RevicerComponent} from './revicer/revicer.component';
+import {ShareModuleModule} from "../../../../share-module/share-module.module";
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SenderComponent,
+    RevicerComponent
+  ],
+  exports: [
+    SenderComponent,
+    RevicerComponent,
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ShareModuleModule,
+
   ]
 })
-export class AngularPage5Module { }
+export class AngularPage5Module {
+}

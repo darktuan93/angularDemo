@@ -6,7 +6,7 @@ import { Component, OnInit,Input  } from '@angular/core';
   styleUrls: ['./child2-component.component.css']
 })
 export class Child2ComponentComponent implements OnInit {
-  @Input() valueParentMess: any;
+  @Input() valueInputNumber: any;
   constructor() { }
 
   ngOnInit(): void {

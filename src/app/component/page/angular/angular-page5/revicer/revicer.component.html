@@ -1,0 +1,18 @@
+<h4>Bên Nhận</h4>
+<p>Dữ liệu nhận được hiển thị tại bảng</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Top</th>
+    <th scope="col">Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let items of dataHasRes">
+    <th scope="row">{{items.id}}</th>
+    <td>{{items.name}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<button *ngIf="dataHasRes.length > 0"  (click)="deletedArray()" class="btn btn-danger"> Xóa Bảng</button>
