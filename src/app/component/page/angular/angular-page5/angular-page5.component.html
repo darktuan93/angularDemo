@@ -18,6 +18,7 @@
   <div class="ml-3 col-5 angular-data-binding">
     <h5>Chia sẻ dữ liệu từ cha sang con</h5>
     <p>Nhập input xong (sự kiện onchange) sau đó dưới component con nhận được dữ liệu và binding ra ngoài </p>
+    <label>Nhập số tiền của bạn</label>
     <input class="form-control" (change)="valueInput($event)">
     <hr>
     <app-child2-component [valueInputNumber]="valueInputNumber"></app-child2-component>
