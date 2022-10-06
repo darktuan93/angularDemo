@@ -10,6 +10,10 @@ import {AngularPage4Component} from "../component/page/angular/angular-page4/ang
 import {AngularPage5Component} from "../component/page/angular/angular-page5/angular-page5.component";
 import {AngularPage6Component} from "../component/page/angular/angular-page6/angular-page6.component";
 import {HomeContentComponent} from "../component/page/trangchu/home-content/home-content.component";
+import {HtmlComponent} from "../component/page/htmlcss/html/html.component";
+import {PrioritycssComponent} from "../component/page/htmlcss/prioritycss/prioritycss.component";
+import {CssselectorComponent} from "../component/page/htmlcss/cssselector/cssselector.component";
+
 
 
 const routes: Routes = [
@@ -17,6 +21,10 @@ const routes: Routes = [
   {path: `typepage1`, component: TypePageOneComponent},
   {path: "typepage2", component: TypePage2Component},
   {path: "typepage3", component: TypePage3Component},
+  {path: "html-coban", component: HtmlComponent},
+  {path: "css-priority", component: PrioritycssComponent},
+  {path: "css-selector", component: CssselectorComponent},
+  // {path: "typepage3", component: TypePage3Component},
   //
   {path: "angular1", component: AngularPage1Component},
   {path: "angular-component", component: AngularPage2Component},

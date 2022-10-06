@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularPage6Component } from './angular-page6.component';
+import { CssselectorComponent } from './cssselector.component';
 
-describe('AngularPage6Component', () => {
-  let component: AngularPage6Component;
-  let fixture: ComponentFixture<AngularPage6Component>;
+describe('CssselectorComponent', () => {
+  let component: CssselectorComponent;
+  let fixture: ComponentFixture<CssselectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AngularPage6Component ]
+      declarations: [ CssselectorComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AngularPage6Component);
+    fixture = TestBed.createComponent(CssselectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

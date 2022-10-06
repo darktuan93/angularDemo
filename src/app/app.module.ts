@@ -23,6 +23,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularPage5Module} from "./component/page/angular/angular-page5/angular-page5.module";
 import {ShareModuleModule} from "./share-module/share-module.module";
 import {NgSelectModule} from '@ng-select/ng-select';
+import { HtmlComponent } from './component/page/htmlcss/html/html.component';
+import { PrioritycssComponent } from './component/page/htmlcss/prioritycss/prioritycss.component';
+import { CssselectorComponent } from './component/page/htmlcss/cssselector/cssselector.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import {NgSelectModule} from '@ng-select/ng-select';
     HomeContentComponent,
     ChildComponentComponent,
     Child2ComponentComponent,
+    HtmlComponent,
+    PrioritycssComponent,
+    CssselectorComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
