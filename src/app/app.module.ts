@@ -17,7 +17,9 @@ import {AngularPage4Component} from './component/page/angular/angular-page4/angu
 import {AngularPage5Component} from './component/page/angular/angular-page5/angular-page5.component';
 import {AngularPage6Component} from './component/page/angular/angular-page6/angular-page6.component';
 import {HomeContentComponent} from './component/page/trangchu/home-content/home-content.component';
-
+import {ChildComponentComponent} from './component/page/angular/angular-page5/child-component/child-component.component';
+import {Child2ComponentComponent} from './component/page/angular/angular-page5/child2-component/child2-component.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,10 +39,14 @@ import {HomeContentComponent} from './component/page/trangchu/home-content/home-
     AngularPage5Component,
     AngularPage6Component,
     HomeContentComponent,
+
+    ChildComponentComponent,
+    Child2ComponentComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

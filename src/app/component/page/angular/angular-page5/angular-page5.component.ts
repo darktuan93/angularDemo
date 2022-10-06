@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-angular-page5',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularPage5Component implements OnInit {
 
-  constructor() { }
+  public valueParent: any = 0
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  clickAdd($event: any) {
+    console.log($event)
+      this.valueParent = $event*10
+  }
+
+
+  valueInput(event: any) {
+    console.log(event.target.value)
+    this.valueParent = event.target.value
+  }
 }

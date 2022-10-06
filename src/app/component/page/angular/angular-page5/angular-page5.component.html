@@ -1,1 +1,32 @@
-<p>angular-page5 works!</p>
+<h4>Chia sẻ dữ liệu giữa các Component </h4>
+<div class="row container">
+  <div class="col-5 angular-data-binding">
+    <h5>Chia sẻ dữ liệu từ con sang cha</h5>
+    <p>Bài toán click button thuộc Component con, bên Component cha hiển thị. Truyền dữ liệu từ con => cha</p>
+    <p>Logic: Lắng nghe Event từ dưới component con và @Output() var_event = new EventEmitter(); chuyển sự kiện ra ngoài
+      component cha,
+      tại component cha chỉ cần thêm attribute là (var_event) = function lấy giá trị đó gửi lên để tính toán
+    </p>
+    <p>Component cha: {{valueParent}}</p>
+    <p>Nhận giá trị từ component con nhân với lên 10</p>
+    <hr>
+    <div class="bg-warning p-3" style="border-radius: 15px">
+      <app-child-component (voteSize)="clickAdd($event)"></app-child-component>
+    </div>
+  </div>
+
+  <div class="ml-3 col-5 angular-data-binding">
+    <h5>Chia sẻ dữ liệu từ cha sang con</h5>
+    <p>Nhập input xong (sự kiện onchange) sau đó dưới component con nhận được dữ liệu và binding ra ngoài </p>
+    <input class="form-control" (change)="valueInput($event)">
+    <hr>
+    <app-child2-component [valueParentMess]="valueParent"></app-child2-component>
+  </div>
+</div>
+<br>
+<h4>Chia sẻ dữ liệu giữa các Component thông qua RxJX BehaviourSubject </h4>
+
+
+
+
+
