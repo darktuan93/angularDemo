@@ -9,7 +9,7 @@ export class SharedpipePipe implements PipeTransform {
     let testLength = value.length
     console.log(value.length)
     if (value.length > 5){
-      return 'Nhập số 123456 đã qua xử lý pipe '
+      return 'Xin chào các bạn '
     }
 
   }

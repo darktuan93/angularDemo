@@ -1,12 +1,16 @@
-<h4>Pipe Angular</h4>
+<h4>Pipe Angular cơ bản</h4>
+<p>Thường xử lý dữ liệu truyền từ html dưới dạng  < biến | pipe_name > để chuyển đổi giá trị của biến sang 1 dạng khác theo ý của mình
+
+xử lý ở trên service pipe
+</p>
 <div class="row pb-3">
   <div class="col-3">
     <label>Nhập vào dãy số 123456</label>
-    <input type="number" (input)="inputNumber($event)" class="form-control">
+    <input type="number" max="5" (input)="inputNumber($event)" class="form-control">
   </div>
 </div>
 
 <h4>Không qua xử lý pipe: {{danhSachNumber}}</h4>
 
 
-<h4>Qua xử lý pipe: {{danhSachNumber | sharedpipe}}</h4>
+<h4>Qua xử lý pipe chuyển 123456 thành Xin chào các bạn: {{danhSachNumber | sharedpipe}}</h4>
