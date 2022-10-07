@@ -16,7 +16,7 @@ export class AngularPage4Component implements OnInit {
 
   }
 
-  inputNumber($event: any) {
+  inputNumber($event: any) { // Bắt sự kiện ô input lấy value
     // console.log($event.target.value)
     this.danhSachNumber = $event.target.value
   }

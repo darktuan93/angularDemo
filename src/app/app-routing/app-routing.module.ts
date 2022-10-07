@@ -15,7 +15,6 @@ import {PrioritycssComponent} from "../component/page/htmlcss/prioritycss/priori
 import {CssselectorComponent} from "../component/page/htmlcss/cssselector/cssselector.component";
 
 
-
 const routes: Routes = [
   {path: ``, component: HomeContentComponent},
   {path: `typepage1`, component: TypePageOneComponent},
@@ -29,7 +28,7 @@ const routes: Routes = [
   {path: "angular1", component: AngularPage1Component},
   {path: "angular-component", component: AngularPage2Component},
   {path: "angular-databinding", component: AngularPage3Component},
-  {path: "angular4", component: AngularPage4Component},
+  {path: "angular-pipe", component: AngularPage4Component},
   {path: "angular5", component: AngularPage5Component},
   {path: "angular6", component: AngularPage6Component},
 ];

@@ -1,16 +1,35 @@
-<h4>Pipe Angular cơ bản</h4>
-<p>Thường xử lý dữ liệu truyền từ html dưới dạng  < biến | pipe_name > để chuyển đổi giá trị của biến sang 1 dạng khác theo ý của mình
-
-xử lý ở trên service pipe
+<h4>Pipe Angular </h4>
+<p>Định nghĩa cũng hơi khó hiểu nên giải thích đơn giản là:</p>
+<p>Thường xử lý dữ liệu truyền từ html dưới dạng < biến | pipe_name > xử lý ở trên service pipe để chuyển đổi giá trị sang 1 dạng khác
+  theo ý của mình, nếu đúng điều kiện sẽ xử lý hiển thị giao diện với kết quả là giá trị đã qua xử lý
 </p>
 <div class="row pb-3">
   <div class="col-3">
-    <label>Nhập vào dãy số 123456</label>
+    <label>Cho bài toán: Nhập vào dãy số 123456</label>
     <input type="number" max="5" (input)="inputNumber($event)" class="form-control">
   </div>
 </div>
-
 <h4>Không qua xử lý pipe: {{danhSachNumber}}</h4>
+<h4>Qua xử lý pipe chuyển nhập 123456 thành string 'Xin chào các bạn': <span
+  class="text-danger">{{danhSachNumber | sharedpipe}}</span></h4>
 
+<hr>
+<div class="row pb-3">
+  <div class="col-3">
+    <label>code HTML</label>
+    <img src="assets/images/pipe1.png" atl="pipe">
+  </div>
+</div>
+<div class="row pb-3">
+  <div class="col-3">
+    <label>code Logic Component</label>
+    <img src="assets/images/pipe2.png" atl="pipe">
+  </div>
+</div>
+<div class="row pb-3">
+  <div class="col-3">
+    <label>code Logic Pipe</label>
+    <img src="assets/images/pipe3.png" atl="pipe">
+  </div>
+</div>
 
-<h4>Qua xử lý pipe chuyển 123456 thành Xin chào các bạn: {{danhSachNumber | sharedpipe}}</h4>
