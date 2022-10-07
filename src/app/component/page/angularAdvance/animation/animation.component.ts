@@ -27,11 +27,22 @@ import {trigger, transition, animate, style, keyframes, state} from '@angular/an
       })),
       transition('state2=>state1', animate('2000ms')),
       transition('state1=>state2', animate('2000ms')),
+
+      transition('state1=>state3', animate('5s', keyframes([
+          style({transform: 'translateX(-74%)'}),
+          style({transform: 'translateY(100%)'}),
+          style({transform: 'translateX(0%)'})
+        ])),
+      ),
+
+
       transition('state2=>state3', animate('5s', keyframes([
-        style({transform: 'translateX(0%)'}),
-        style({transform: 'translateY(100%)'}),
-        style({transform: 'translateX(0%)'})
-      ])),)
+          style({transform: 'translateX(74%)'}),
+          style({transform: 'translateY(100%)'}),
+          style({transform: 'translateX(0%)'})
+        ])),
+      )
+
     ])
   ]
 })
