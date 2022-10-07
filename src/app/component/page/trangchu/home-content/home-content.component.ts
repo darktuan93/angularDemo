@@ -12,4 +12,7 @@ export class HomeContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  restartTour() {
+
+  }
 }

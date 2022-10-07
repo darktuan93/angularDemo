@@ -1,13 +1,16 @@
 <div class="d-flex">
   <!-- Sidebar  -->
-    <app-sidebar></app-sidebar>
+  <app-sidebar></app-sidebar>
 
   <!-- Page Content  -->
   <div id="content">
-    <div >
-        <app-navbar></app-navbar>
-        <app-content></app-content>
+    <div>
+      <app-navbar></app-navbar>
+      <app-content></app-content>
+      <button class="btn btn-primary" (click)="restartTour()">
+          Hướng dẫn bố cục
+      </button>
     </div>
   </div>
 </div>
-
+<ngx-guided-tour></ngx-guided-tour>

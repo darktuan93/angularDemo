@@ -23,9 +23,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularPage5Module} from "./component/page/angular/angular-page5/angular-page5.module";
 import {ShareModuleModule} from "./share-module/share-module.module";
 import {NgSelectModule} from '@ng-select/ng-select';
-import { HtmlComponent } from './component/page/htmlcss/html/html.component';
-import { PrioritycssComponent } from './component/page/htmlcss/prioritycss/prioritycss.component';
-import { CssselectorComponent } from './component/page/htmlcss/cssselector/cssselector.component';
+import {HtmlComponent} from './component/page/htmlcss/html/html.component';
+import {PrioritycssComponent} from './component/page/htmlcss/prioritycss/prioritycss.component';
+import {CssselectorComponent} from './component/page/htmlcss/cssselector/cssselector.component';
+import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
 
 @NgModule({
   declarations: [
@@ -54,9 +55,12 @@ import { CssselectorComponent } from './component/page/htmlcss/cssselector/cssse
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
     AppRoutingModule, ShareModuleModule, NgSelectModule,
-    BrowserAnimationsModule, AngularPage5Module
+    BrowserAnimationsModule, AngularPage5Module,
+    GuidedTourModule
   ],
-  providers: [],
+  providers: [
+    GuidedTourService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
