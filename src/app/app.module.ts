@@ -28,6 +28,8 @@ import {PrioritycssComponent} from './component/page/htmlcss/prioritycss/priorit
 import {CssselectorComponent} from './component/page/htmlcss/cssselector/cssselector.component';
 import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
 import { SharedpipePipe } from './pipe/sharedpipe.pipe';
+import { DemoDirectiveDirective } from './demo-directive.directive';
+import { AnimationComponent } from './component/page/angularAdvance/animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { SharedpipePipe } from './pipe/sharedpipe.pipe';
     PrioritycssComponent,
     CssselectorComponent,
     SharedpipePipe,
+    DemoDirectiveDirective,
+    AnimationComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,

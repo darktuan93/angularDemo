@@ -13,6 +13,7 @@ import {HomeContentComponent} from "../component/page/trangchu/home-content/home
 import {HtmlComponent} from "../component/page/htmlcss/html/html.component";
 import {PrioritycssComponent} from "../component/page/htmlcss/prioritycss/prioritycss.component";
 import {CssselectorComponent} from "../component/page/htmlcss/cssselector/cssselector.component";
+import {AnimationComponent} from "../component/page/angularAdvance/animation/animation.component";
 
 
 const routes: Routes = [
@@ -29,8 +30,9 @@ const routes: Routes = [
   {path: "angular-component", component: AngularPage2Component},
   {path: "angular-databinding", component: AngularPage3Component},
   {path: "angular-pipe", component: AngularPage4Component},
-  {path: "angular5", component: AngularPage5Component},
-  {path: "angular6", component: AngularPage6Component},
+  {path: "angular5-truyendulieu", component: AngularPage5Component},
+  {path: "angular6-lifecycle", component: AngularPage6Component},
+  {path: "angular-animation", component: AnimationComponent},
 ];
 
 @NgModule({
