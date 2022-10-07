@@ -1,9 +1,29 @@
 <h4>Animation trong Angular 1 cách đơn giản nhất</h4>
-<p>
-  <button class="btn btn-primary" (click)="toggle($event)">Toggle</button>
-</p>
+<div class="row">
+  <button class="btn btn-primary" (click)="toggle($event)">Bật/Tắt</button>
 
-<div class="text-center" style="height: 300px; border: 1px solid red; background: red; border-radius: 15px" *ngIf="show" [@animationTest]>
-      <h1>ĐÂY LÀ ANIMATION THƯ VIỆN ANGULAR</h1>
+  <button class="btn ml-3" style="background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);"
+          (click)="toggle2($event)">Chữ to ra
+  </button>
 
+  <div class="form-check ml-4">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" (click)="checkValue()" value="option1">
+    <label class="form-check-label" for="exampleRadios1">
+        Rung Lắc Tự Động
+    </label>
+  </div>
+  <div class="form-check ml-2">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+        Dừng
+    </label>
+  </div>
+
+</div>
+
+
+<div class="text-center d-flex align-items-center justify-content-center mt-4"
+     style="height: 300px; border: 1px solid red; background: red; border-radius: 15px" *ngIf="show"
+     [@animationTest]>
+  <h1 [@animationTest2]="animationState">ĐÂY LÀ ANIMATION THƯ VIỆN ANGULAR</h1>
 </div>
