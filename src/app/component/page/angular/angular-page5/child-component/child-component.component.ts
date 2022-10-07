@@ -18,3 +18,5 @@ export class ChildComponentComponent implements OnInit {
     this.voteSize.emit(this.counter);
   }
 }
+
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-angular-page4',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularPage4Component implements OnInit {
 
-  constructor() { }
+  public danhSachNumber: any = 0
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+
+  }
+
+  inputNumber($event: any) {
+    // console.log($event.target.value)
+    this.danhSachNumber = $event.target.value
+  }
 }

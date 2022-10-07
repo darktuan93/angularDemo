@@ -27,6 +27,7 @@ import {HtmlComponent} from './component/page/htmlcss/html/html.component';
 import {PrioritycssComponent} from './component/page/htmlcss/prioritycss/prioritycss.component';
 import {CssselectorComponent} from './component/page/htmlcss/cssselector/cssselector.component';
 import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
+import { SharedpipePipe } from './pipe/sharedpipe.pipe';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
     HtmlComponent,
     PrioritycssComponent,
     CssselectorComponent,
+    SharedpipePipe,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,

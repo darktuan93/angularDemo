@@ -1,1 +1,12 @@
-<p>angular-page4 works!</p>
+<h4>Pipe Angular</h4>
+<div class="row pb-3">
+  <div class="col-3">
+    <label>Nhập vào dãy số 123456</label>
+    <input type="number" (input)="inputNumber($event)" class="form-control">
+  </div>
+</div>
+
+<h4>Không qua xử lý pipe: {{danhSachNumber}}</h4>
+
+
+<h4>Qua xử lý pipe: {{danhSachNumber | sharedpipe}}</h4>

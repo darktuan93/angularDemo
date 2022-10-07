@@ -8,6 +8,8 @@ import {GuidedTour, Orientation, GuidedTourService} from 'ngx-guided-tour';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+
+  showbutton = false;
   step3 = false;
   step4 = false;
 
@@ -53,6 +55,7 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.showbutton = true
   }
 
   restartTour() {
