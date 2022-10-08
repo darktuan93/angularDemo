@@ -1,5 +1,15 @@
 <h4>Animation trong Angular 1 cách đơn giản nhất</h4>
-<div class="row">
+
+<p>Animation Angular là thư viện có sẵn ở trong Angular, có thể viết animation angular theo kiểu inline bên trong component cũng được ví dụ như ảnh</p>
+
+<img src="assets/images/anima1.png">
+
+<p> Hoặc có thể viết thành 1 function và return về như hình </p>
+<img src="assets/images/anima2.png">
+
+<p>Và import vào component để sử dụng</p>
+<img src="assets/images/anima3.png">
+<div class="row mt-4">
   <button class="btn btn-primary" (click)="toggle($event)">Bật/Tắt</button>
 
   <button class="btn ml-3" style="background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);"
@@ -20,3 +30,33 @@
      [@animationTest]>
   <h1 [@animationTest2]="animationState">ĐÂY LÀ ANIMATION THƯ VIỆN ANGULAR</h1>
 </div>
+
+<hr>
+<h4>Trong Animation Angular có rất nhiều thứ, có mấy cái cái cơ bản này cần nhớ</h4>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Từ Khóa</th>
+    <th scope="col">Ý nghĩa</th>
+    <th scope="col">Minh Họa</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>trigger</td>
+    <td>Kích hoạt animation được khai báo</td>
+    <td>   [@animationTest2]="animationState" kích hoạt 1 thuộc tính trigger trong thẻ html bất kỳ </td>
+  </tr>
+  <tr>
+
+    <td>transition</td>
+    <td>Dạng chuyển tiếp trạng thái</td>
+    <td>:enter => :leave (chuyển từ trạng thái vào sang trạng thái thoát đi)</td>
+  </tr>
+  <tr>
+    <td>style / animate</td>
+    <td>Nắm về CSS sẽ hiểu</td>
+    <td>Có thể lên google tìm hiểu thêm</td>
+  </tr>
+  </tbody>
+</table>

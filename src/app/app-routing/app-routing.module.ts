@@ -14,7 +14,7 @@ import {HtmlComponent} from "../component/page/htmlcss/html/html.component";
 import {PrioritycssComponent} from "../component/page/htmlcss/prioritycss/prioritycss.component";
 import {CssselectorComponent} from "../component/page/htmlcss/cssselector/cssselector.component";
 import {AnimationComponent} from "../component/page/angularAdvance/animation/animation.component";
-
+import {FormComponent} from "../component/page/angularAdvance/form/form.component";
 
 const routes: Routes = [
   {path: ``, component: HomeContentComponent},
@@ -33,6 +33,7 @@ const routes: Routes = [
   {path: "angular5-truyendulieu", component: AngularPage5Component},
   {path: "angular6-lifecycle", component: AngularPage6Component},
   {path: "angular-animation", component: AnimationComponent},
+  {path: "angular-form", component: FormComponent},
 ];
 
 @NgModule({

@@ -30,6 +30,7 @@ import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
 import { SharedpipePipe } from './pipe/sharedpipe.pipe';
 import { DemoDirectiveDirective } from './demo-directive.directive';
 import { AnimationComponent } from './component/page/angularAdvance/animation/animation.component';
+import { FormComponent } from './component/page/angularAdvance/form/form.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { AnimationComponent } from './component/page/angularAdvance/animation/an
     SharedpipePipe,
     DemoDirectiveDirective,
     AnimationComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
