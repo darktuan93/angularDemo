@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductServiceService} from "../../../../services/product-service.service";
-
+import {FormBuilder, FormControl, FormGroup, FormArray, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -10,16 +10,31 @@ import {ProductServiceService} from "../../../../services/product-service.servic
 export class FormComponent implements OnInit {
 
   public ArrSanPham: any
+  public formSanPham: any
+
 
   constructor(
-    private productService: ProductServiceService
+    private productService: ProductServiceService,
+    private fb: FormBuilder
   ) {
+    this.formSanPham = FormGroup
+  }
 
+  get f() {
+    return this.formSanPham.controls;
   }
 
   ngOnInit(): void {
     //Get API
     this.getdata()
+
+    this.formSanPham = this.fb.group({
+      MaSP: new FormControl('', [Validators.required]),
+      TenSP: new FormControl('', [Validators.required]),
+      GiaSP: new FormControl('', [Validators.required]),
+      HinhSP: new FormControl('', [Validators.required]),
+      MoTa: new FormControl('', [Validators.required]),
+    });
   }
 
 
@@ -44,8 +59,36 @@ export class FormComponent implements OnInit {
     console.log(MaSP)
   }
 
-
   addSanPham() {
-    console.log('tes')
+    if (!this.formSanPham.invalid) {
+      let value = this.formSanPham.value
+      this.ArrSanPham.push(value)
+      this.productService.addItems(value).subscribe((res: any) => {
+        console.log(res)
+      })
+    }
   }
+
+  checkPrice() {
+    // this.ArrSanPham.sort()
+    console.log(this.ArrSanPham)
+    this.ArrSanPham = this.ArrSanPham.sort((a: any, b: any) => {
+      return a.GiaSP - b.GiaSP
+    })
+  }
+
+  checkPriceHigh() {
+    this.ArrSanPham = this.ArrSanPham.sort((a: any, b: any) => {
+      return b.GiaSP - a.GiaSP
+    })
+  }
+
+  searchSP($event: any) {
+    let valueInput = $event.target.value
+
+    this.ArrSanPham = this.ArrSanPham.filter((sp: any) => {
+      return sp.TenSP.includes(valueInput);
+    })
+  }
+
 }

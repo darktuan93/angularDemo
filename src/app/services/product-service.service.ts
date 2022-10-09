@@ -21,5 +21,7 @@ export class ProductServiceService {
     return this.http.delete<any>(`${apiDemo}/${id}`);
   }
 
-
+  addItems(data:any) {
+    return this.http.post<any>(`${apiDemo}`, data);
+  }
 }
