@@ -27,10 +27,13 @@ import {HtmlComponent} from './component/page/htmlcss/html/html.component';
 import {PrioritycssComponent} from './component/page/htmlcss/prioritycss/prioritycss.component';
 import {CssselectorComponent} from './component/page/htmlcss/cssselector/cssselector.component';
 import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
-import { SharedpipePipe } from './pipe/sharedpipe.pipe';
-import { DemoDirectiveDirective } from './demo-directive.directive';
-import { AnimationComponent } from './component/page/angularAdvance/animation/animation.component';
-import { FormComponent } from './component/page/angularAdvance/form/form.component';
+import {SharedpipePipe} from './pipe/sharedpipe.pipe';
+import {DemoDirectiveDirective} from './demo-directive.directive';
+import {AnimationComponent} from './component/page/angularAdvance/animation/animation.component';
+import {FormComponent} from './component/page/angularAdvance/form/form.component';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { PhantichbaitapComponent } from './component/page/angularAdvance/phantichbaitap/phantichbaitap.component';
+
 
 @NgModule({
   declarations: [
@@ -59,15 +62,16 @@ import { FormComponent } from './component/page/angularAdvance/form/form.compone
     DemoDirectiveDirective,
     AnimationComponent,
     FormComponent,
+    PhantichbaitapComponent,
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
     AppRoutingModule, ShareModuleModule, NgSelectModule,
     BrowserAnimationsModule, AngularPage5Module,
-    GuidedTourModule
+    GuidedTourModule, HttpClientModule
   ],
   providers: [
-    GuidedTourService
+    GuidedTourService, HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

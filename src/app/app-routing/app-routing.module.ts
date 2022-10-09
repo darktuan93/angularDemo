@@ -15,6 +15,7 @@ import {PrioritycssComponent} from "../component/page/htmlcss/prioritycss/priori
 import {CssselectorComponent} from "../component/page/htmlcss/cssselector/cssselector.component";
 import {AnimationComponent} from "../component/page/angularAdvance/animation/animation.component";
 import {FormComponent} from "../component/page/angularAdvance/form/form.component";
+import {PhantichbaitapComponent} from "../component/page/angularAdvance/phantichbaitap/phantichbaitap.component";
 
 const routes: Routes = [
   {path: ``, component: HomeContentComponent},
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path: "angular6-lifecycle", component: AngularPage6Component},
   {path: "angular-animation", component: AnimationComponent},
   {path: "angular-form", component: FormComponent},
+  {path: "angular-baitap", component: PhantichbaitapComponent},
 ];
 
 @NgModule({
