@@ -76,7 +76,7 @@ import {NgxGoogleAnalyticsModule} from 'ngx-google-analytics';
     AppRoutingModule, ShareModuleModule, NgSelectModule,
     BrowserAnimationsModule, AngularPage5Module,
     GuidedTourModule, HttpClientModule,
-    NgxGoogleAnalyticsModule.forRoot('YFVK6L5MYC')
+    NgxGoogleAnalyticsModule.forRoot('G-YFVK6L5MYC')
   ],
   providers: [
     GuidedTourService, HttpClientModule
