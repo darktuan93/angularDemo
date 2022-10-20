@@ -17,8 +17,12 @@ import {AngularPage4Component} from './component/page/angular/angular-page4/angu
 import {AngularPage5Component} from './component/page/angular/angular-page5/angular-page5.component';
 import {AngularPage6Component} from './component/page/angular/angular-page6/angular-page6.component';
 import {HomeContentComponent} from './component/page/trangchu/home-content/home-content.component';
-import {ChildComponentComponent} from './component/page/angular/angular-page5/child-component/child-component.component';
-import {Child2ComponentComponent} from './component/page/angular/angular-page5/child2-component/child2-component.component';
+import {
+  ChildComponentComponent
+} from './component/page/angular/angular-page5/child-component/child-component.component';
+import {
+  Child2ComponentComponent
+} from './component/page/angular/angular-page5/child2-component/child2-component.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularPage5Module} from "./component/page/angular/angular-page5/angular-page5.module";
 import {ShareModuleModule} from "./share-module/share-module.module";
@@ -32,12 +36,15 @@ import {DemoDirectiveDirective} from './demo-directive.directive';
 import {AnimationComponent} from './component/page/angularAdvance/animation/animation.component';
 import {FormComponent} from './component/page/angularAdvance/form/form.component';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
-import { PhantichbaitapComponent } from './component/page/angularAdvance/phantichbaitap/phantichbaitap.component';
+import {PhantichbaitapComponent} from './component/page/angularAdvance/phantichbaitap/phantichbaitap.component';
+
+import {NgxGoogleAnalyticsModule} from 'ngx-google-analytics';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
     HomepageComponent,
     SidebarComponent,
     NavbarComponent,
@@ -68,7 +75,8 @@ import { PhantichbaitapComponent } from './component/page/angularAdvance/phantic
     BrowserModule, FormsModule, ReactiveFormsModule,
     AppRoutingModule, ShareModuleModule, NgSelectModule,
     BrowserAnimationsModule, AngularPage5Module,
-    GuidedTourModule, HttpClientModule
+    GuidedTourModule, HttpClientModule,
+    NgxGoogleAnalyticsModule.forRoot('YFVK6L5MYC')
   ],
   providers: [
     GuidedTourService, HttpClientModule
