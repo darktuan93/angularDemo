@@ -38,7 +38,7 @@ import {FormComponent} from './component/page/angularAdvance/form/form.component
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {PhantichbaitapComponent} from './component/page/angularAdvance/phantichbaitap/phantichbaitap.component';
 
-import {NgxGoogleAnalyticsModule} from 'ngx-google-analytics';
+import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
 
 
 @NgModule({
@@ -76,7 +76,8 @@ import {NgxGoogleAnalyticsModule} from 'ngx-google-analytics';
     AppRoutingModule, ShareModuleModule, NgSelectModule,
     BrowserAnimationsModule, AngularPage5Module,
     GuidedTourModule, HttpClientModule,
-    NgxGoogleAnalyticsModule.forRoot('G-YFVK6L5MYC')
+    NgxGoogleAnalyticsModule.forRoot('G-YFVK6L5MYC'),
+    NgxGoogleAnalyticsRouterModule
   ],
   providers: [
     GuidedTourService, HttpClientModule
