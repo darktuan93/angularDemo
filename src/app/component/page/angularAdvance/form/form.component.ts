@@ -48,6 +48,11 @@ export class FormComponent implements OnInit {
   }
 
   delSanPham(MaSP: any) {
+    gtag('event', 'Xóa sản phẩm', {
+      'event_category': 'BUTTON_CLICK',
+      'event_label': 'Xóa Sản Phẩm',
+      'value': `${MaSP}`
+    })
     let index = this.ArrSanPham.findIndex((sp: any) => {
       return sp.MaSP === MaSP
     })
@@ -62,11 +67,6 @@ export class FormComponent implements OnInit {
   }
 
   addSanPham() {
-    gtag('event', 'MY_BUTTON_1_CLICK', {
-      'event_category': 'BUTTON_CLICK',
-      'event_label': 'UA Click 1',
-      'value': 'Some custom value 1'
-    })
     if (!this.formSanPham.invalid) {
       let value = this.formSanPham.value
       this.ArrSanPham.push(value)
