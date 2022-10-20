@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {ProductServiceService} from "../../../../services/product-service.service";
 import {FormBuilder, FormControl, FormGroup, FormArray, Validators} from '@angular/forms';
 
+declare var gtag: (arg0: string, arg1: string, arg2: { event_category: string; event_label: string; value: string; }) => void
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -60,6 +62,11 @@ export class FormComponent implements OnInit {
   }
 
   addSanPham() {
+    gtag('event', 'MY_BUTTON_1_CLICK', {
+      'event_category': 'BUTTON_CLICK',
+      'event_label': 'UA Click 1',
+      'value': 'Some custom value 1'
+    })
     if (!this.formSanPham.invalid) {
       let value = this.formSanPham.value
       this.ArrSanPham.push(value)
